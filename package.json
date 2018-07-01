@@ -1,0 +1,23 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "tdd, js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/israeldantasleite/js-tdd.git"
+  },
+  "keywords": [
+    "js",
+    "tdd"
+  ],
+  "author": "israel dantas leite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/israeldantasleite/js-tdd/issues"
+  },
+  "homepage": "https://github.com/israeldantasleite/js-tdd#readme"
+}
