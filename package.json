@@ -4,6 +4,7 @@
   "description": "tdd, js",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint --fix ./*/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/israeldantasleite/js-tdd/issues"
   },
-  "homepage": "https://github.com/israeldantasleite/js-tdd#readme"
+  "homepage": "https://github.com/israeldantasleite/js-tdd#readme",
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
 }
