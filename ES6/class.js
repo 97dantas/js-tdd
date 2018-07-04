@@ -12,7 +12,7 @@ const Cat = new Animal('Cat', 'Meow')
 Cat.hello()
 
 class Dog extends Animal {
-    constructor (name,sound) {
+    constructor (name, sound) {
         super(name)
         this.sound = sound
     }
@@ -21,5 +21,5 @@ class Dog extends Animal {
     }
 }
 
-const Toby = new Dog('Toby','AuAUu')
-	Toby.bark()
+const Toby = new Dog('Toby', 'AuAUu')
+Toby.bark()
