@@ -1,43 +1,51 @@
 {
-  "name": "app.js",
-  "version": "1.0.0",
-  "description": "tdd, js",
-  "main": "index.js",
-  "scripts": {
-    "lint": "./node_modules/.bin/eslint --fix ./TDD/*/*.js",
-    "test": "./node_modules/.bin/mocha TDD/tests/**/*.spec.js",
-	"tdd": "./node_modules/.bin/mocha TDD/tests/**/*.spec.js --watch",
-	"coverage": "nyc npm test"
-  },
-  "nyc": {
-	"reporter": ["text", "html"],
-	"exclude": ["tests/**"]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/israeldantasleite/js-tdd.git"
-  },
-  "keywords": [
-    "js",
-    "tdd"
-  ],
-  "author": "israel dantas leite",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/israeldantasleite/js-tdd/issues"
-  },
-  "homepage": "https://github.com/israeldantasleite/js-tdd#readme",
-  "devDependencies": {
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
-    "chai": "^4.1.2",
-    "eslint": "^5.0.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "mocha": "^5.2.0",
-    "nyc": "^12.0.2"
-  }
+	"name": "app.js",
+	"version": "1.0.0",
+	"description": "tdd, js",
+	"main": "index.js",
+	"scripts": {
+		"lint": "./node_modules/.bin/eslint --fix ./TDD/*/*.js",
+		"test": "./node_modules/.bin/mocha TDD/tests/**/*.spec.js",
+		"tdd": "./node_modules/.bin/mocha TDD/tests/**/*.spec.js --watch",
+		"coverage": "nyc npm test"
+	},
+	"nyc": {
+		"functions": 80,
+		"lines": 80,
+		"check-coverage": true,
+		"reporter": [
+			"text",
+			"html"
+		],
+		"exclude": [
+			"TDD/tests/**"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/israeldantasleite/js-tdd.git"
+	},
+	"keywords": [
+		"js",
+		"tdd"
+	],
+	"author": "israel dantas leite",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/israeldantasleite/js-tdd/issues"
+	},
+	"homepage": "https://github.com/israeldantasleite/js-tdd#readme",
+	"devDependencies": {
+		"babel-preset-env": "^1.7.0",
+		"babel-register": "^6.26.0",
+		"chai": "^4.1.2",
+		"eslint": "^5.0.1",
+		"eslint-config-standard": "^11.0.0",
+		"eslint-plugin-import": "^2.13.0",
+		"eslint-plugin-node": "^6.0.1",
+		"eslint-plugin-promise": "^3.8.0",
+		"eslint-plugin-standard": "^3.1.0",
+		"mocha": "^5.2.0",
+		"nyc": "^12.0.2"
+	}
 }
